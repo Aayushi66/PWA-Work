@@ -1,0 +1,131 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food Recipies</title>
+    <!-- materialize icons, css & js -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+            
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link type="text/css" href="./css/styles.css" rel="stylesheet">
+    <link rel="manifest" href="/manifest.json">
+    <!-- ios support -->
+    <link rel="apple-touch-icon" href="icons/healthy-food-icon-96x96.png">
+    <meta name="apple-mobile-web-app-status-bar" content="#aa7700">
+    <meta name="theme-color" content="#FFE1C4">
+</head>
+<body class="grey lighten-4">
+    <!-- top nav -->
+    <nav class="z-depth-0">
+        <div class="nav-wrapper container">
+            <a href="/"><span>Food</span><span>Recipies</span></a>
+            <span class="right grey-text text-darken-1">
+                <i class="material-icons sidenav-trigger" data-target="side-menu">menu</i>
+            </span>
+        </div>
+    </nav>
+    
+    <!-- side nav -->
+    <ul id="side-menu" class="sidenav side-menu">
+        <li><a class="subheader">FOODRECIPIES</a></li>
+        <li><a href="/" class="waves-effect">Home</a></li>
+        <li><a href="/pages/about.html" class="waves-effect">About</a></li>
+        <li><div class="divider"></div></li>
+        <li><a href="/pages/contact.html" class="waves-effect">
+            <i class="material-icons">mail_outline</i>Contact</a>
+        </li>
+    </ul>
+
+  <!-- recipies -->
+    <div class="recipies container grey-text text-darken-1">
+        <h6 class="center">Tasty Recipies</h6>
+        <div class="card-panel recipie white row">
+            <img src="/img/healthy-food-icon.png" alt="recipie thumb">
+            <div class="recipie-details">
+                <div class="recipie-title">One Pot Edamame Pasta with Coconut-Turmeric Sauce</div>
+                <div class="recipie-ingredients">Edamame Pasta, white onion, jalapeno/serrano, garlic, zucchini, water, coconut milk, turmeric powder, salt, crushed black pepper, unsalted almonds, red crushed pepper, olive oil, non-stick spray</div>
+            </div>
+            <div class="recipie-delete">
+                <i class="material-icons">delete_outline</i>
+            </div>
+        </div>
+        
+        <div class="card-panel recipie white row">
+            <img src="/img/healthy-food-icon.png" alt="recipie thumb">
+            <div class="recipie-details">
+            <div class="recipie-title">Homemade No-Egg Pasta With Lemon Alfredo Sauce</div>
+                <div class="recipie-ingredients-title">PASTA</div>
+                    <div class="recipie-ingredients">All purpose flour, kosher salt, aquafaba, olive oil, frozen peas</div>
+                <div class="recipie-ingredients-title">LEMON ALFREDO SAUCE</div>
+                    <div class="recipie-ingredients">unsalted butter, garlic, minced, all purpose flour, warm whole milk, freshly grated parmesan cheese, kosher salt, ground black pepper, lemon zested, lemon juice</div>
+            </div>
+            <div class="recipie-delete">
+                <i class="material-icons">delete_outline</i>
+            </div>
+        </div>
+        
+        <div class="card-panel recipie white row">
+            <img src="/img/healthy-food-icon.png" alt="recipe thumb">
+            <div class="recipie-details">
+                <div class="recipie-title">Cheesecake</div>
+                <div class="recipie-ingredients">sweetened condensed milk, cream cheese, eggs, pie pan (if not using a crust, butter the pan)</div>
+            </div>
+            <div class="recipie-delete">
+                <i class="material-icons">delete_outline</i>
+            </div>
+        </div>
+        <div class="card-panel recipie white row">
+            <img src="/img/healthy-food-icon.png" alt="recipie thumb">
+            <div class="recipie-details">
+                <div class="recipie-title">One Pot Garlic Parmesan Pasta</div>
+                <div class="recipie-ingredients">unsalted butter, garlic, vegetable broth, milk, fettuccine, salt, pepper, grated parmesan cheese, freshly chopped parsley</div>
+            </div>
+            <div class="recipie-delete">
+                <i class="material-icons">delete_outline</i>
+            </div>
+        </div>
+        <div class="card-panel recipie white row">
+            <img src="/img/healthy-food-icon.png" alt="recipie thumb">
+            <div class="recipie-details">
+                <div class="recipie-title">Five-cheese Mac and Cheese</div>
+                <div class="recipie-ingredients">elbow macaroni (or any macaroni), evaporated milk, eggs, unsalted butter, shredded and divided cheddar cheese, shredded mozzarella cheese, crumbled feta cheese, small cut pieces of provolone cheese, smoked shredded gouda cheese, salt, black pepper</div>
+            </div>
+            <div class="recipie-delete">
+                <i class="material-icons">delete_outline</i>
+            </div>
+        </div>
+    </div>
+
+    <div class="center">
+        <a class="btn-floating btn-large add-btn sidenav-trigger" data-target="side-form">
+            <i class="material-icons">add</i>
+        </a>
+    </div>
+    
+    <!-- add recipe side nav -->
+    <div id="side-form" class="sidenav side-form">
+        <form class="add-recipie container section">
+            <h6 >New Recipie</h6>
+            <div class="divider"></div>
+            <div class="input-field">
+                <input placeholder="e.g. Food recipie" id="title" type="text" class="validate">
+                <label for="title">Recipie Title</label>
+            </div>
+            <div class="input-field">
+                <input placeholder="e.g. Tofu, mushroom, garlic" id="ingredients" type="text" class="validate">
+                <label for="ingredients">Ingredients</label>
+            </div>
+            <div class="input-field center">
+                <button class="btn-small">Add</button>
+            </div>
+        </form>
+    </div>
+    
+    <script src="/js/app.js"></script>
+    <script src="/js/ui.js"></script>
+
+</body>
+</html>
